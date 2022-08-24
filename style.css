@@ -1,0 +1,376 @@
+  @font-face {
+    font-family: bankgothic-regular;
+    src: url(BankGothicLtBTLight.ttf);
+  }
+  @font-face {
+    font-family: billiondreams;
+    src: url(BillionDreams_PERSONAL.ttf);
+  }
+
+  body {
+    background: url(background\ \(1\).webp) no-repeat center center fixed;
+    -webkit-background-size: cover; /* For WebKit*/
+    -moz-background-size: cover;    /* Mozilla*/
+    -o-background-size: cover;      /* Opera*/
+    background-size: cover;
+  }
+
+  .bar {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+      border: 3px solid black;
+      height: auto;
+      width: 100%;
+      max-height: 5vh;
+      background:rgb(255, 255, 255);
+      text-align: center;
+      font-family: bankgothic-regular;
+      margin-bottom: 0px;
+  }
+
+  .item {
+    font-family: bankgothic-regular;
+    font-size: 2.5vmax;
+    text-align: center;
+    margin-left: 30px;
+    margin-right: 30px;
+    color: rgb(0, 0, 0, 0.6);
+    margin-left: 2%;
+    margin-right: 2%;
+  }
+
+  .navimage {
+    width: 5%;
+    margin-left: 10px;
+    margin-right: 10px;
+    min-width: 50px;
+}
+
+.activ {
+    transition: 1s  ease-out;
+    color: black;
+}
+
+.vlink {
+  transition: 1s  ease-out;
+  text-decoration: none;
+  font-size: 2.5vmax;
+}
+
+.vlink:visited {
+  text-decoration: none;
+}
+
+.vlink:hover {
+    font-size: 2.7vmax;
+    transition: 1s;
+    color:rgb(0, 195, 255);
+}
+
+.activ:hover {
+    font-size: 2.7vmax;
+    transition: 1s;
+}
+
+
+
+  .title {
+    font-family: bankgothic-regular;
+    font-weight: bold;
+    text-align: center;
+    font-size: 3vmax;
+    color: white;
+    text-shadow: black -0.3vmin 0.3vmin 2px;
+    max-width: 100%;
+    font-weight: bold;
+    background:rgb(0, 0, 0, 0.3);
+  }
+
+  .titlediv {
+    stroke: 20px black solid;
+    margin-right: 0px;
+    max-width: 80%;
+    text-align: center;
+}
+
+
+.navimage2 {
+   width: 500px;
+   height: auto;
+   float: right;
+   
+    
+}
+
+.main {
+    width: 100%;
+    height: 20vh;
+    max-height: 300px;
+    display: flex;
+    justify-content:space-around;
+    margin-top: 2vh;
+    font-family: bankgothic-regular;
+    text-align: center;
+    min-height: 300px;
+    margin-bottom: 5%;
+}
+
+
+.gallerylink {
+    background: rgb(0, 195, 255);
+    width: 20%;
+    max-height: 50%;
+    border: 2px rgb(0, 0, 0) solid;
+    transition: 1s  ease-out;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.gallerylink:hover {
+    transition: 1s;
+    border-radius: 10px;
+    width: 30%;
+}
+
+.gallerylink:visited {
+  text-decoration: none;
+}
+
+.aboutlink {
+    background: rgb(0, 195, 255);
+    width: 20%;
+    max-height: 50%;
+    border: 2px rgb(0, 0, 0) solid;
+    transition: 1s  ease-out;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.aboutlink:hover {
+    transition: 1s;
+    border-radius: 10px;
+    width: 30%;
+}
+
+.aboutlink:visited {
+  text-decoration: none;
+}
+
+.beans {
+    width: 100%; /* width of container */
+    height: 90%; /* height of container */
+    max-height: 80%;
+    object-fit: cover;
+    border: 2px solid black;
+}
+.maintext {
+    font-size: 4vmin;
+    margin-top: 2%;
+    color: white;
+    text-shadow: 0.2vmin 0.2vmin 0.2vmin black;
+ }
+
+.rowbg {
+  height: 100%;
+  -webkit-background-size: cover; /* For WebKit*/
+  -moz-background-size: cover;    /* Mozilla*/
+  -o-background-size: cover;      /* Opera*/
+  background-size: cover;
+ }
+
+.gimage {
+  position: relative;
+  max-width: 10%;
+ }
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 4px;
+}
+
+/* Create four equal columns that sits next to each other */
+.column {
+  flex: 25%;
+  max-width: 25%;
+  padding: 0 4px;
+  justify-content: center;
+}
+
+.column img {
+  margin-top: 8px;
+  vertical-align: middle;
+  width: 95%;
+  border: 0.2vmax solid black;
+  transition: 1s;
+  padding: 1%;
+  background: white;
+}
+
+.column img:hover {
+  width: 105%;
+  transition: 1s ease-out;
+  justify-content: center;
+  position: relative;
+}
+
+/* Responsive layout - makes a three column-layout instead of four columns */
+@media screen and (max-width: 1400px) {
+  .column {
+    flex: 33%;
+    max-width: 33%;
+  }
+}
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 1200px) {
+  .column {
+    flex: 50%;
+    max-width: 50%;
+  }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 1000px) {
+  .column {
+    flex: 100%;
+    max-width: 100%;
+  }
+}
+
+
+  .bio h1{
+    width: 100%;
+    height: 100%;
+    font-family: bankgothic-regular;
+    font-size: 5vmin;
+  }
+
+  .bio {
+    width: 100%;
+    height: 20%;
+    background: rgb(255, 255, 255, 0.9);
+    border: 3px solid black;
+    text-align: right;
+    color: black;
+    margin-bottom: 1%;
+    margin-top: 3%;
+  }
+
+  .linesmall {
+   
+    color: black;
+  }
+
+  .biotext {
+    margin-left: 10%;
+    margin-right: 5%;
+    margin-top: 1%;
+    margin-bottom: 1%;
+    color: black; 
+    font-family: bankgothic-regular;
+    font-size: 3vmin;
+    font-weight: bolder;
+  }
+
+.gallerytext {
+  width: 100%;
+  font-family: bankgothic-regular;
+  font-size: 1.5vmax;
+  color: black;
+  text-shadow: 0.1vmin 0.1vmin white;
+  text-align: center;
+  background: rgb(255, 255, 255, 0.8);
+  border: 3px solid black;
+  margin-top: 1%;
+  font-weight: bold;
+}
+
+.contact {
+  text-align: center;
+  color:black;
+  background: white;
+  height: 4vh;
+  border: black solid 3px;
+  font-family: bankgothic-regular;
+  font-weight: bold;
+  font-size: 2.5vmin;
+  margin-top: 2px;
+}
+
+.sfont {
+  font-size: 2vh;
+}
+
+.reviews {
+  background: url(BRUSHES\ \(1\).webp) no-repeat center;
+  height: auto;
+  width: 100%;
+  border: black solid 3px;
+  position: fixed;
+  bottom: -3px;
+  -webkit-background-size: cover; /* For WebKit*/
+  -moz-background-size: cover;    /* Mozilla*/
+  -o-background-size: cover;      /* Opera*/
+  background-size: cover;
+  opacity: 1;
+}
+
+.bluetext {
+  color: rgb(0, 195, 255);
+}
+
+.bioimg {
+  max-height: 20vmax;
+  float: left;
+  position: relative;
+  margin: 2%;
+  padding: 1%;
+  border: 0.5vmin solid rgb(0, 195, 255);
+  transition: 1s;
+}
+
+.bioimg:hover {
+  max-height: 22vmax;
+  transition: 1s ease;
+}
+
+.diodir {
+  font-family: billiondreams;
+  color:rgb(0, 195, 255);
+  font-size: 10vmin;
+  text-shadow: 0.4vmin 0.4vmin black;
+  font-weight: 1;
+}
+
+.homebg {
+  display:flex;
+  justify-content: center;
+  width: 95%;
+  height: 10%;
+  text-align: center;
+  background: rgb(255, 255, 255, 0.8);
+  color:black;
+  opacity: 1;
+  font-weight: bold;
+  border: 3px solid black;
+  border-radius: 100px;
+  margin: 0 auto;
+  margin-bottom: 3%;
+}
+
+
+.hometext {
+  opacity: 1;
+  text-shadow: -1px 1px 10px white;
+  font-family: bankgothic-regular;
+  font-size: 7vmin;
+}
+
+.elfsight-app-34306fa4-30ee-47b7-9201-5e998b4c077a {
+  width: 100%;
+  height: 100%;
+  padding-top: 1%;
+  background: rgb(255, 255, 255, 0.8);
+  font-weight: bold;
+}
